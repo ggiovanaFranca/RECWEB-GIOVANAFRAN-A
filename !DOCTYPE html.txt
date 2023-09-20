@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Site</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src defer 'main.js'></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="#oqueé">O que é?</a>
+                    <a href="#MelhoresCenas">Melhores Cenas</a>
+                </ul>
+            </nav>
+            <article class="title-page">
+                <div class="title">
+                    <h1>The Walking Dead</h1>
+                    <p>Um pouco sobre a série
+                    <p>
+                </div>
+            </article>
+        </div>
+    </header>
+
+    <main>
+        <div class="tituloAuxiliar">
+            <h2 id="oqueé">O que é?</h2>
+        </div>
+        <div class="conteudo-curiosidades">
+            <div class="conteudo01"><img src="https://gkpb.com.br/wp-content/uploads/2022/11/novo-jogo-the-walking-dead-scaled-e1668709108765-696x391.jpg"
+                    alt=""></div>
+            <div class="conteudo02">
+                <p>
+                    The Walking Dead, uma série americana gravada desde 2010 até 2023, gênero distópico, conta sobre
+                    um grupo tentando sobrebviver a um mundo pós-apocaliptico, dominado por zumbis. Mas ao longo do
+                    tempo a maior batalha deles se torna, sobreviver e lutar contra os mortos... e os vivos....
+                </p>
+            </div>
+        </div>
+
+        <div class="tituloAuxiliar02">
+            <h2 id="Melhores Cenas">Melhores Cenas</h2>
+        </div>
+
+        <div class="Melhores episódios">
+            
+            <div class="Temp.9- Ep.15">
+                <p>Temp.9- Ep.15</p><img src="imagens/cabeças.webp">
+            </div>
+            <div class="Temp.4- Ep.8">
+                <p>Temp.4- Ep.8</p><img src="imagens/governador.jpg">
+            </div>
+            <div class="Temp.7- Ep.1">
+                <p>Temp.7- Ep.1</p><img src="imagens/negan.jpg">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: 5;
+    font-family: 'Inter Tight', sans-serif;
+    text-decoration: none;
+    outline: rgb(58, 51, 47);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(29, 24, 21);
+}
+
+header {
+    background-image: url(imagens/the-walking-dead1.webp);
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: rgb(0, 0, 0)
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 2250px;
+    height: 900px;
+    margin: 1 auto;
+    padding: 3rem;
+}
+
+article {
+    padding: 1rem 0;
+}
+
+.title-page {
+    display: flex;
+    justify-content: center;
+}
+
+.title-page .title {
+    margin: 50px;
+    text-align: center;
+    padding: 0 50px;
+    border-radius: 50px;
+    height: 250px;
+    color: rgb(24, 22, 21);
+    background-color: rgba(82, 74, 68, 0.7);
+}
+
+
+nav {
+    display: flex;
+    justify-content: start;
+    width: 150%;
+    height: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: start;
+}
+
+nav ul a {
+    color: rgb(207, 183, 158);
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: block;
+}
+
+
+nav ul a::after {
+    content: "";
+    height: 5px;
+    width: 0%;
+    background-color: rgb(29, 24, 21);
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+main {
+    height: 160px;
+    max-width: 100%;
+    background-color: rgb(20, 17, 13);
+}
+
+.tituloAuxiliar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 50px;
+    color: white;
+}
+
+.conteudo-melhores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: .4rem;
+    margin: 70px 100px;
+}
+
+.conteudo01 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border: 1px solid rgb(185, 179, 172);
+    height: 392px;
+    width: 698px;
+    border-radius: 50px;
+    background-image: url("img/img1.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.conteudo02 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo02 p {
+    font-size: 31.7px;
+
+}
+
+.tituloAuxiliar02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+
+.Temporadas class {
+    border: 2px;
+    height: 500px;
+    width: 500px;
+    border-radius: 60px;
+}
+
+.cabeças {
+    background: url("imagens/cabeças.webp");
+    background-position: left;
+    background-size: cover;
+}
+
+.governador {
+    background: url("imagens/governador.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.negan {
+    background: url("imagens/negan.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.melhores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 1.5rem;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+
+.cabeças {
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.governador {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.negan {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cabeças p,
+.governador p,
+.negan p {
+    font-size: 30px;
+    margin-top: 50px;
+    color: rgb(255, 253, 253)
+}
